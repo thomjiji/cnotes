@@ -290,7 +290,7 @@ The problem is that `&tab[-1]` and `&tab[n]` are both outside the limits of the 
 
 ---
 
-根据我的实测，解引用 `tab[-1]` 会显示 warning（实际上这个操作在 C 中应该说也是不合法的）。不像 Python，使用 `tab[[-1]` 可以直接 access 到最后一个元素。
+根据我的实测，解引用 `tab[-1]` 会显示 warning（实际上这个操作在 C 中应该说也是不合法的）。不像 Python，使用 `tab[-1]` 可以直接 access 到最后一个元素。
 
 ```c
 #include <stdio.h>
